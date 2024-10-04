@@ -22,7 +22,7 @@ go run main.go Maksimko
 go build        main.go && ./main
 go build -o app main.go && ./app
 
-GOPATH="$(pwd):/home/runner/go/bin" go install .
+GOPATH="$(pwd):$HOME/bin" go install .
 ./bin/go-dependency-producer Max
 ./bin/go-dependency-producer
 

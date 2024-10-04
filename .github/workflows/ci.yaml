@@ -11,6 +11,6 @@ jobs:
       - run: go mod tidy
       - run: go run main.go Max
       - run: go build -o app main.go && ./app
-      - run: GOPATH="$(pwd):/home/runner/go/bin" go install .
+      - run: GOPATH="$(pwd):$HOME/bin" go install .
       - run: ./bin/go-dependency-producer MK
       - run: ./bin/go-dependency-producer
