@@ -19,8 +19,8 @@ touch main.go # ...and implement
 go run main.go
 go run main.go Maksimko
 
-go build          main.go && ./main
-go build -o greet main.go && ./greet
+go build        main.go && ./main
+go build -o app main.go && ./app
 
 GOPATH="$(pwd):/home/runner/go/bin" go install .
 ./bin/go-dependency-producer Max
